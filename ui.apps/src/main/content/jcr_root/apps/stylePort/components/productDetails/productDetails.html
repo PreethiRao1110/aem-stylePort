@@ -1,0 +1,18 @@
+<h1>Books</h1>
+
+<sly data-sly-use.model= "com.adobe.aem.stylePort.core.models.ProductDetails">
+
+
+   <p data-sly-list.book = "${model.productList}">
+    <h4>${book.productName}</h4>
+    <h4>${book.productDescription}</h4>
+    <h4>${book.productPrice}</h4>
+
+
+    <p data-sly-list.spec="${book.productSpecification}">
+	<h4>${spec.specificationName}</h4>
+    <h4>${spec.specificationValue}</h4>
+    </p>
+   </p>
+
+</sly>

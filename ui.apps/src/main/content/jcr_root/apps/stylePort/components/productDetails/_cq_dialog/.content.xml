@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <productInfo
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Product Information"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                fieldLabel="Product Details">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <productList
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Product List"
+                                        fieldLabel="Product List"
+                                        required="{Boolean}false">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            emptyText="Product List"
+                                            name="./productList">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <productName
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Product Name"
+                                                    fieldLabel="Product Name"
+                                                    name="./productName"
+                                                    validate="myComponent"/>
+                                                <productDescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Product Description"
+                                                    fieldLabel="Product Description"
+                                                    name="./productDescription"/>
+                                                <productPrice
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                    emptyText="Product Price"
+                                                    fieldLabel="Product Price"
+                                                    name="./productPrice"/>
+                                                <productSpecifictaion
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true">
+                                                    <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        emptyText="Product Specification"
+                                                        name="./productSpecification">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <specificationName
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                emptyText="Specification Name"
+                                                                fieldLabel="Specification Name"
+                                                                name="./specificationName"/>
+                                                            <specificationValue
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                emptyText="Specification Value"
+                                                                fieldLabel="Specification Value"
+                                                                name="./specificationValue"/>
+                                                        </items>
+                                                    </field>
+                                                </productSpecifictaion>
+                                            </items>
+                                        </field>
+                                    </productList>
+                                </items>
+                            </well>
+                        </items>
+                    </productInfo>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

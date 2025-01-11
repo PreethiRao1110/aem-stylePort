@@ -1,0 +1,11 @@
+<h1>Books</h1>
+
+<sly data-sly-use.model= "com.adobe.aem.stylePort.core.models.PersonalDetailsImpl">
+${model.authorname}
+<p data-sly-list.book = "${model.bookdetailswithmap}">
+<h4>${book.bookname}</h4>
+<h4>${book.booksubject}</h4>
+<h4>${book.publishyear}</h4>
+</p>
+
+</sly>

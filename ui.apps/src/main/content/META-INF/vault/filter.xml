@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/stylePort/clientlibs"/>
+    <filter root="/apps/stylePort/components"/>
+    <filter root="/apps/stylePort/i18n"/>
+</workspaceFilter>

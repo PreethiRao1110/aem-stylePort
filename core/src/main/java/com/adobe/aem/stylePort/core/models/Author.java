@@ -8,4 +8,6 @@ public interface Author {
 
     String getSubject();
 
+    String getPageTitle();
+
 }

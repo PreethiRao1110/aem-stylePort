@@ -1,0 +1,30 @@
+  {
+  "FAQ": [
+  {
+    "category": "General",
+    "question": "What is AEM?",
+    "answer": "AEM is a CMS."
+  },{
+    "category": "Technical",
+    "question": "What is Sling?",
+    "answer": "Sling is a web framework."
+  },{
+    "category": "General1",
+    "question": "What is AEM?1",
+    "answer": "AEM is a CMS.1"
+  },{
+    "category": "Technical1",
+    "question": "What is Sling?1",
+    "answer": "Sling is a web framework.1"
+  },{
+    "category": "General2",
+    "question": "What is AEM?2",
+    "answer": "AEM is a CMS2."
+  },{
+    "category": "Technical2",
+    "question": "What is Sling?2",
+    "answer": "Sling is a web framework2."
+  }
+]
+}
+

@@ -1,0 +1,15 @@
+
+<sly data-sly-use.dynamicFAQ="com.adobe.aem.stylePort.core.models.DynamicFAQModel"></sly>
+
+<!-- <div class="faq-container"> -->
+    <h2>${dynamicFAQ.heading}</h2>
+    <ul>
+        <!-- Loop through FAQs -->
+        <sly data-sly-list.faqs="${dynamicFAQ.filteredFAQs}">
+            <li>
+                <h3>${faqs.question}</h3>
+                <p>${faqs.answer}</p>
+            </li>
+        </sly>
+    </ul>
+</div>

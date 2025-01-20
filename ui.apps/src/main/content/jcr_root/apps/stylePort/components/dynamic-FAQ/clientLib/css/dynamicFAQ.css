@@ -1,0 +1,27 @@
+.dynamic-faq-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dynamic-faq-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#faq-list .faq-item {
+    margin-bottom: 15px;
+}
+
+#faq-list .faq-item h3 {
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0;
+}
+
+#faq-list .faq-item p {
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+    display: none; /* Initially hidden */
+}

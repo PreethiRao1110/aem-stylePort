@@ -10,4 +10,5 @@ public interface Author {
 
     String getPageTitle();
 
+    String getHomePageName();
 }

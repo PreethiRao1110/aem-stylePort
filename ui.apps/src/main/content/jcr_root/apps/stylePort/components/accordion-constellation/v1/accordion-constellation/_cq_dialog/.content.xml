@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:dialogMode="floating"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Accordion Constellation"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Banner Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <size
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/radiogroup"
+                                                fieldDescription="Please select the size."
+                                                name="./size"
+                                                text="Size">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <medium
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/radio"
+                                                        name="./size"
+                                                        text="medium"
+                                                        value="medium"/>
+                                                    <large
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/radio"
+                                                        name="./size"
+                                                        text="large"
+                                                        value="large"/>
+                                                </items>
+                                            </size>
+                                            <label-weight
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/radiogroup"
+                                                fieldDescription="Please select the label weight."
+                                                name="./labelWeight"
+                                                text="Label weight">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <normal
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/radio"
+                                                        name="./labelWeight"
+                                                        text="normal"
+                                                        value="normal"/>
+                                                    <bold
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/radio"
+                                                        name="./labelWeight"
+                                                        text="headline"
+                                                        value="bold"/>
+                                                </items>
+                                            </label-weight>
+                                            <iconPosition
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/radiogroup"
+                                                fieldDescription="Please select the icon position."
+                                                name="./iconPosition"
+                                                text="Icon Position">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <trailing
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/radio"
+                                                        name="./iconPosition"
+                                                        text="trailing"
+                                                        value="trailing"/>
+                                                    <leading
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/radio"
+                                                        name="./iconPosition"
+                                                        text="leading"
+                                                        value="leading"/>
+                                                </items>
+                                            </iconPosition>
+                                            <expanded
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}false"
+                                                name="./expanded"
+                                                text="expanded"
+                                                value="{Boolean}true"/>
+                                            <hasSummary
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}false"
+                                                name="./hasSummary"
+                                                text="has Summary"
+                                                value="{Boolean}true"/>
+                                            <labelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Label Text"
+                                                name="./labelText"/>
+                                            <summary
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Summary Text"
+                                                name="./summary"/>
+                                            <content
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Content"
+                                                name="./content"/>
+                                            <cfPath
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Please select the size."
+                                                name="./cfPath"
+                                                text="CF Path"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
